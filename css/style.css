@@ -1,0 +1,404 @@
+:root{
+    --main-color:rgb(120, 48, 0);
+    --text-color-one:#fff;
+    --text-color-two:#000;
+    --text-color-three:rgb(79, 79, 79);
+    --main-sec-color:rgb(202, 85, 7);
+    --first-color-lighter: hsl(10, 92%, 85%);
+    --text-color-light: hsl(10, 8%, 65%);
+ 
+}
+*,::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    height:200vh;
+   
+}
+.container{
+    width: 100%;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--text-color-one);
+}
+.title{
+    padding: 1.4rem;
+}
+.title h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+#menu{
+    position: absolute;
+    top: 25%;
+    right: 8%;
+    cursor: pointer;
+}
+#menu span{
+    display: block;
+    margin: 0.3em 0;
+    width: 30px;
+    height: 5px;
+    background-color: var(--text-color-two);
+    border: none;
+}
+
+@media screen and (max-width:768px) {
+    .navigation{
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--text-color-one);
+    z-index: 100000;
+    border-top: 2px solid #ccc;
+    transition: 0.2s ease-in;
+    display: none;
+}
+.navigation ul {
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+    list-style: none;
+}
+.navigation ul li{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+}
+
+
+.navigation ul li a{
+    text-decoration: none;
+    color: var(--text-color-two);
+    font-weight: 500;
+}
+.navigation ul li a:hover{
+    color: var(--main-color);
+}
+#menu-close{
+    position: absolute;
+    top: 2%;
+    right: 8%;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: none;
+}
+.sticky{
+   box-shadow: 0.02em 0.02em 0.2em rgba(0,0,0,0.2);
+}
+main{
+    margin-top: -2em;
+}
+.text{
+    padding-left: 1.2em;
+    padding-top: 10em;
+}
+
+
+.text h1{
+    font-size: 3.5rem;
+    line-height: 1.3;
+}
+.section-p p{
+    margin-top: 1.3em;
+    font-size: 1rem;
+    color:var(--text-color-three) ;
+}
+.section-button{
+    margin-top: 2.5em;
+}
+.section-button button{
+    padding: 2rem 5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: var(--main-color);
+    color: var(--text-color-one);
+    cursor: pointer;
+}
+.section-button button:hover{
+    box-shadow: 1em 1em 2em rgba(0,0,0,0.2);
+    background-color:var(--main-sec-color) ;
+}
+.home__blob{
+    width: 300px;
+    margin: 3.5em;
+}
+.home__blob img{
+    width: 220px;
+}
+.home__blob-img {
+    width: 220px;
+  }
+.section-icons ul{
+    display: flex;
+}  
+#about{
+  margin-top: 6em;
+}
+.about-title,.about-text{
+  text-align: center;
+}
+.about-title h3{
+  font-size: 2rem;
+}
+.about-text {
+  color: var(--text-color-three);
+  font-size: 1rem;
+}
+.about-info{
+  margin-top: 3em;
+  margin-left: 2rem;
+}
+.skills h3{
+  font-size:1.6rem ;
+}
+.skills ul{
+  list-style-type: none;
+}
+.skills ul li{
+  padding: 0.3rem 0;
+  font-size: 1.2rem;
+}
+.experience{
+  margin: 3em 0;
+}
+.exp-1,exp-2{
+  margin: 1em 0;
+}
+.exp-1 p{
+  color: var(--text-color-three);
+}
+#services{
+  margin-top: 6em;
+}
+.service-title{
+  text-align: center;
+}
+.service-title h3{
+  font-size: 2rem;
+}
+.service-title p{
+  color: var(--text-color-three);
+}
+.service{
+  margin-top: 3em;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.row{
+  margin: 0 2.2em;
+}
+.col{
+  width: 280px;
+  height: 200px;
+  box-shadow: 0.03em 0.03em 0.3em rgba(0,0,0,0.2);
+  margin: 1em 2em;
+  padding: 1em;
+  border-radius: 10px;
+  text-align: center;
+}
+.project{
+  text-align: center;
+  margin-top: 7em;
+}
+.project button{
+
+    padding: 1.4rem 5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    background-color: var(--main-color);
+    color: var(--text-color-one);
+    cursor: pointer;
+}
+.project button:hover{
+    box-shadow: 1em 1em 2em rgba(0,0,0,0.2);
+    background-color:var(--main-sec-color) ;
+}
+.footer {
+  padding-top: 2rem;
+}
+
+.footer__container {
+  row-gap: 3.5rem;
+}
+
+.footer__bg {
+  background-color: var(--main-color);
+  padding: 2rem 0 3rem;
+}
+
+.footer__title {
+  font-size:1.5rem ;
+  margin-bottom: 0.25rem;
+}
+
+.footer__subtitle {
+  font-size: 0.813rem;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer__link:hover {
+  color: var(--first-color-lighter);
+}
+
+.footer__social {
+  font-size: 1.25rem;
+  margin-right: 1.5rem;
+}
+
+.footer__social:hover {
+  color: var(--first-color-lighter);
+}
+
+.footer__copy {
+  font-size: 0.813rem;
+  text-align: center;
+  color: var(--text-color-light);
+  margin-top: 3rem;
+}
+
+.footer__title,
+.footer__link,
+.footer__social {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+
+}
+.footer__subtitle{
+  color: var(--text-color-one);
+  font-size: 0.813rem;
+  padding: 1rem 3rem;
+}
+.section-icons ul{
+  list-style-type: none;
+}
+.section-icons ul li{
+  padding: 0 0.5rem;
+}
+.section-icons i{
+  font-size: 30px;
+  color: var(--main-color);
+}
+.section-icons i:hover{
+  color: var(--main-sec-color);
+}
+.col i{
+  font-size: 50px;
+  margin-top: 2em;
+  color: var(--main-sec-color);
+}
+#contact{
+  padding-left: 3em;
+  padding-top: 1em;
+  color: var(--text-color-one);
+}
+#contact p{
+  color: var(--text-color-three);
+}
+
+@media screen and (min-width:768px) {
+  #menu{
+    display: none;
+  }
+  #contact{
+    position: relative;
+  margin-left: auto;
+   margin-right: 3em;
+  }
+  .grid{
+    display: flex;
+  }
+  .title{
+    padding-left: 6rem;
+  }
+  .title h3{
+    font-size: 1rem;
+  }
+  .header{
+    height: 70px;
+  }
+  .navigation{
+    margin-top: -3em;
+  }
+  .navigation ul{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin-right: 10em;
+  }
+  .navigation ul li{
+    padding: 0 1.7rem;
+    font-size: 1rem;
+  }
+  .text{
+    padding-left: 4.5em;
+    padding-top: 1em;
+  }
+  .text h1{
+    font-size: 4rem;
+  }
+  main{
+    margin-top: 6em;
+  }
+  #home{
+    display: flex;
+  }
+  .home__blob{
+    width: 400px;
+    margin: 6em 5em;
+}
+.about-title h3{
+  font-size: 3rem;
+  font-weight: 400;
+}
+.about-text{
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.about-info{
+  max-width: 900px;
+  margin: 5em auto;
+  display: flex;
+  
+}
+.experience{
+  margin-left: 21em;
+  margin-top: 0;
+}
+.skills{
+  margin-left: 7em;
+}
+.exp-2{
+  margin-top: 3.5em;
+}
+.row{
+  margin: 4em 2.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+}
