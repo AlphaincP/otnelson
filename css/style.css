@@ -316,7 +316,24 @@ main{
 #contact p{
   color: var(--text-color-three);
 }
-
+.project_video{
+  width: 300px;
+  margin: 1rem;
+}
+.project_video video{
+  width: 100%;
+  object-fit: contain;
+}
+.project_project{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 3rem;
+}
+.project_video button{
+  margin-top: 1rem;
+  padding: 0.875rem 2rem;
+}
 @media screen and (min-width:768px) {
   #menu{
     display: none;
@@ -399,6 +416,9 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.project_project{
+  display: flex;
 }
 
 }
